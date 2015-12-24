@@ -6,6 +6,8 @@ local json = require('cjson')
 local query = "select * from cats;"
 ngx.say(json.encode(mysql.query(query)))
 
+ngx.say(ngx.header)
+
 -- ngx.say(ngx.ctx[MySQL])
 
 -- ngx.say(package.path)
